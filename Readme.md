@@ -1,11 +1,13 @@
 # Cricket Fever
 
+#### Demo: 
 <div align="center">
   <a href="https://www.youtube.com/watch?v=n3Ld_40X1EY"><img src="https://img.youtube.com/vi/n3Ld_40X1EY/0.jpg" alt="IMAGE ALT TEXT"></a>
 </div>
-
+<br>
 You can find the video on: https://www.youtube.com/watch?v=n3Ld_40X1EY
 
+#### Introduction:
 Welcome to Cricket Fever! The goal of the game is to win coins. All your coins add up to give you a place on the leaderboard. To win coins, you can play cricket trivia or predict the result of the upcoming cricket match!
 
 In cricket trivia, I will ask you a random question. For every right answer, you get 1 coin. You have to respond with the number of the answer. For example, say one, two, three, or four.
