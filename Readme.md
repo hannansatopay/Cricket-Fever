@@ -2,7 +2,7 @@
 
 #### Video Demo: 
 <div align="center">
-  <a href="https://www.youtube.com/watch?v=n3Ld_40X1EY"><img src="https://img.youtube.com/vi/n3Ld_40X1EY/0.jpg" alt="IMAGE ALT TEXT"></a>
+  <a href="https://www.youtube.com/watch?v=n3Ld_40X1EY"><img src="https://i.imgur.com/TA9Vi97.png"></a>
 </div>
 <br>
 You can find the video on: https://www.youtube.com/watch?v=n3Ld_40X1EY
