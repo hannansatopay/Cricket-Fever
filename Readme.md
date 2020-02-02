@@ -1,4 +1,4 @@
-## Cricket Fever
+# Cricket Fever
 
 Vendor ID: M3JWD8H81W6DWV
 
@@ -18,3 +18,11 @@ For the database, we are using Google Sheets: https://docs.google.com/spreadshee
 We are running a Flask App that allows a player to view the dynamic global leaderboard. It also continously polls the database and the Cricket API to view the match result and update the coins of the participants automatically. After the updation, it fetches new upcoming match details and updates the database. The code for the Flask app can be accessed through: https://github.com/hannansatopay/Cricket-Fever
 
 The Cricket API being utilized for fetching the match results: https://rapidapi.com/dev132/api/cricket-live-scores
+
+#### Instructions:
+1. Open the skill by saying "Alexa, open cricket fever"
+2. You will be greeted by the skill. You can say "Yes" to continue
+3. Next, you can say "cricket trivia" to play cricket trivia or say "predict match" to play the match prediction game
+4. Follow the flow to win coins and score high rank in the leaderboard
+5. Note that you only make one match prediction and you have to wait for the match to end to make the next prediction. You can play cricket trivia an unlimited number of times.
+6. You can say "Alexa, help" to get more details about the skill. You can say "Alexa, stop" to stop the skill.
