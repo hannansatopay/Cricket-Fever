@@ -1,6 +1,6 @@
 # Cricket Fever
 
-#### Demo: 
+#### Video Demo: 
 <div align="center">
   <a href="https://www.youtube.com/watch?v=n3Ld_40X1EY"><img src="https://img.youtube.com/vi/n3Ld_40X1EY/0.jpg" alt="IMAGE ALT TEXT"></a>
 </div>
@@ -35,4 +35,5 @@ The Cricket API being utilized for fetching the match results: https://rapidapi.
 
 ##### Note:
 Vendor ID: M3JWD8H81W6DWV
+
 Skill ID: amzn1.ask.skill.f2d5e6d2-634f-4c5b-815e-1990415bb29a
