@@ -17,13 +17,15 @@ While for the game prediction game, I will tell you about an upcoming match betw
 #### Architecture Details
 The complete presentation for the skill can be viewed directly on: https://docs.google.com/presentation/d/1j1Kgm9A7tHdGQ7_Y7VYBA-CPadNgjTczarMKe1fGV1A/edit?usp=sharing
 
-The skill's Voice User Interface (VUI) and the logic have been completely written in Voiceflow. The flow blocks have been added in the presentation file. Alternatively, you can access the complete project by importing it in Voiceflow through: https://creator.voiceflow.com/dashboard?import=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwcm9qZWN0SWQiOjkyMzE3LCJwcm9qZWN0TmFtZSI6IkNyaWNrZXQgRmV2ZXIiLCJpYXQiOjE1ODA2NTE5MjJ9.-D4q1XnM3yJJd8K3-ONtUE5Yp4w09ku8U1IWY44Zxto
+The skill's Voice User Interface (VUI) and the logic have been completely written in Voiceflow. The flow blocks have been added in the presentation file.
 
-For the database, we are using Google Sheets: https://docs.google.com/spreadsheets/d/1XU_hEaU_g_hhHLA254WQ5OmsUcoGOc9Of2UfqbVlj4Y/edit?usp=sharing
+For the database, we are using Google Sheets.
 
-We are running a Flask App that allows a player to view the dynamic global leaderboard. It also continously polls the database and the Cricket API to view the match result and update the coins of the participants automatically. After the updation, it fetches new upcoming match details and updates the database. The code for the Flask app can be accessed through: https://github.com/hannansatopay/Cricket-Fever
+We are running a Flask App that allows a player to view the dynamic global leaderboard. It also continously polls the database and the Cricket API to view the match result and update the coins of the participants automatically. After the updation, it fetches new upcoming match details and updates the database.
 
 The Cricket API being utilized for fetching the match results: https://rapidapi.com/dev132/api/cricket-live-scores
+
+The global leaderboard can be viewed at: https://cricketfeverapp.herokuapp.com/
 
 #### Instructions:
 1. Open the skill by saying "Alexa, open cricket fever"
