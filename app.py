@@ -10,6 +10,7 @@ import atexit
 from apscheduler.schedulers.background import BackgroundScheduler
 import requests
 from datetime import datetime
+import pytz
 
 app = flask.Flask(__name__)
 port = int(os.getenv("PORT", 9099))
@@ -18,6 +19,7 @@ scope = ['https://spreadsheets.google.com/feeds','https://www.googleapis.com/aut
 creds = ServiceAccountCredentials.from_json_keyfile_name('credentials.json', scope)
 gs = gspread.authorize(creds)
 
+tz = pytz.timezone('Asia/Kolkata')
 
 def check_update_result():
     if time.time() > int(match_details[1][-1]):
@@ -59,12 +61,12 @@ def check_update_result():
                 sheet.get_worksheet(2).update_cell(2, 5, match['homeTeam']['name'])
                 sheet.get_worksheet(2).update_cell(2, 6, match['awayTeam']['name'])
                 dt = datetime.strptime(match['startDateTime'],'%Y-%m-%dT%H:%M:%SZ')
-                sheet.get_worksheet(2).update_cell(2, 7, str(dt.day) + dt.strftime("%B"))
-                sheet.get_worksheet(2).update_cell(2, 8, str(dt.hour))
+                sheet.get_worksheet(2).update_cell(2, 7, str(dt.astimezone(tz).day) + dt.astimezone(tz).strftime("%B"))
+                sheet.get_worksheet(2).update_cell(2, 8, str(dt.astimezone(tz).astimezone(tz).strftime("%H:%M")))
                 sheet.get_worksheet(2).update_cell(2, 9, round(dt.timestamp()))
                 dt = datetime.strptime(match['endDateTime'],'%Y-%m-%dT%H:%M:%SZ')
-                sheet.get_worksheet(2).update_cell(2, 10, str(dt.day) + dt.strftime("%B"))
-                sheet.get_worksheet(2).update_cell(2, 11, str(dt.hour))
+                sheet.get_worksheet(2).update_cell(2, 10, str(dt.astimezone(tz).day) + dt.astimezone(tz).strftime("%B"))
+                sheet.get_worksheet(2).update_cell(2, 11, str(dt.astimezone(tz).astimezone(tz).strftime("%H:%M")))
                 sheet.get_worksheet(2).update_cell(2, 12, round(dt.timestamp()))
 
 scheduler = BackgroundScheduler()
