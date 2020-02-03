@@ -1,0 +1,8 @@
+flask
+gunicorn
+gspread
+pandas
+oauth2client
+apscheduler
+requests
+datetime
