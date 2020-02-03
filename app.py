@@ -22,6 +22,8 @@ gs = gspread.authorize(creds)
 tz = pytz.timezone('Asia/Kolkata')
 
 def check_update_result():
+    sheet = gs.open('Cricket Fever')
+    match_details = sheet.get_worksheet(2).get_all_values()
     if time.time() > int(match_details[1][-1]):
             url = "https://dev132-cricket-live-scores-v1.p.rapidapi.com/match.php"
             querystring = {"seriesid":match_details[1][1],"matchid":match_details[1][0]}
